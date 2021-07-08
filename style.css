@@ -3,7 +3,7 @@
   --nav-color :  #3C3A39;
   --primary-color : #FF6B00;
   --secondary-color : #FFF5E1;
-  --font-crete-round : font-family: 'Crete Round' , sans-serif;
+  --font-crete-round : font-family: 'Crete Round', sans-serif;
   --roboto : font-family: 'Roboto Condensed', sans-serif;
 }
 body {
@@ -47,12 +47,12 @@ header {
   padding-bottom: 50px;
   justify-content: space-evenly;
 }
-header h1 {  
+header .title {  
   
   font-family: var(--font-crete-round);
   font-size: 56px;
 }
-header h1 p {
+header .title p {
   display: inline-block;
   margin : 0;
   color: var(--primary-color);
