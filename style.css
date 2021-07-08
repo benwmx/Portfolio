@@ -103,6 +103,13 @@ section.work div.line {
   margin: auto;
 }
 
+.about-me h1 {
+  font-family: var(--font-crete);
+  font-size: 72px;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
 section.work > h1 {
   width: 90%;
   margin: 120px auto 24px;
@@ -122,21 +129,21 @@ section.work .title {
   font-family: var(--font-crete);
 }
 
-.languages {
+.languages-built {
   display: flex;
   justify-content: flex-start;
   margin-left: 30px;
 }
 
-.languages p {
+.languages-built p {
   background: rgba(255, 255, 255, 0.24);
   justify-content: space-around;
-  margin: 21px 25px 21px 0;
+  margin-right: 5%;
   padding: 15px;
   color: white;
 }
 
-section.work .button {
+.button {
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -145,37 +152,28 @@ section.work .button {
   color: white;
   font-size: 17px;
   font-family: var(--font-crete);
+}
+
+section.work .button {
   width: 100%;
 }
 
 section.work .button:disabled {
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  border: none;
   background-color: #f4f1f0;
   color: #5b5957;
-  font-size: 17px;
-  font-family: var(--font-crete);
   width: 100%;
 }
 
 section.work .button:hover {
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
   background-color: #fff5e1;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  font-size: 17px;
-  font-family: var(--font-crete);
-  width: 100%;
 }
 
 section.work .card {
   width: 90%;
   height: 370px;
-  margin: 24px auto 0;
+  margin: 40px auto 0;
   background-image: url(./img/work.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,4 +182,42 @@ section.work .card {
   align-content: space-between;
   align-items: baseline;
   color: white;
+}
+
+section.about {
+  background-color: var(--theme-color);
+}
+
+.about-me {
+  background-image: url(./img/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 50px 20px 100px;
+  display: flex;
+  flex-flow: column;
+  align-content: baseline;
+  margin-top: 100px;
+}
+
+.line2 {
+  height: 1px;
+  width: 90%;
+  margin: auto;
+  background-color: var(--secondary-color);
+}
+
+.about-me p {
+  color: white;
+  font-family: var(--font-inter);
+}
+
+.about-me button {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.about-me button:hover {
+  background-color: #fff5e1;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
