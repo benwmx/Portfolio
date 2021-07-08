@@ -1,8 +1,8 @@
 :root {
-  --theme-color : #1c1a19;
-  --nav-color : #3c3a39;
-  --primary-color : #ff6B00;
-  --secondary-color : #fff5e1;
+  --theme-color: #1c1a19;
+  --nav-color: #3c3a39;
+  --primary-color: #ff6b00;
+  --secondary-color: #fff5e1;
 }
 
 body {
@@ -48,7 +48,7 @@ section.headline {
   background-size: 200px 100px;
   background-repeat: no-repeat;
   background-position: right bottom;
-  padding : 50px 20px;
+  padding: 50px 20px;
 }
 
 .title {
@@ -75,10 +75,10 @@ section p.details {
 
 section .social-media {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 
-section .social-media img{
+section .social-media img {
   width: 20px;
   height: 20px;
   margin: 20px;
