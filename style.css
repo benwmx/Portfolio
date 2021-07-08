@@ -3,8 +3,6 @@
   --nav-color :  #3C3A39;
   --primary-color : #FF6B00;
   --secondary-color : #FFF5E1;
-  --font-crete-round : font-family: 'Crete Round', sans-serif;
-  --roboto : font-family: 'Roboto Condensed', sans-serif;
 }
 body {
   margin: 0;
@@ -47,14 +45,19 @@ section.headline {
   padding : 50px 20px;
 }
 .title {
-  font-family: var(--font-crete-round);
-  font-size: 56px;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2rem;
   color: var(--primary-color);
+  margin-top: 70px;
+}
+.title h2 {
+  margin: 0;
 }
 section p.secondary {
   font-size : 24px;
   color:var(--secondary-color);
-  font-family: var(--roboto);
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
 }
 section p.details {
   color : white;
