@@ -1,0 +1,78 @@
+:root {
+  --theme-color : #1C1A19;
+  --nav-color :  #3C3A39;
+  --primary-color : #FF6B00;
+  --secondary-color : #FFF5E1;
+  --font-crete-round : font-family: 'Crete Round' , sans-serif;
+  --roboto : font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--nav-color);
+  display :flex;
+  justify-content: space-between;
+  align-content: baseline;
+}
+nav p {
+  display: inline-block;
+  color: var(--secondary-color);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  margin-left: 10px;
+}
+nav img {
+  height: 24px;
+  margin: 15px 10px;
+  padding: 10px;
+}
+header {
+  background-color: var(--theme-color);
+  background-image: url(./img/background.png);
+  background-size: 200px 100px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 0;
+  display :flex;
+  flex-flow: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-evenly;
+}
+header h1 {  
+  
+  font-family: var(--font-crete-round);
+  font-size: 56px;
+}
+header h1 p {
+  display: inline-block;
+  margin : 0;
+  color: var(--primary-color);
+}
+header .social-media img {
+  width : 20px;
+  height :20px;
+}
+header .secondary {
+  font-size : 24px;
+  color:var(--secondary-color);
+  font-family: var(--roboto);
+}
+header .details {
+  color : white;
+}
+div.social-media {
+  display: flex;
+  justify-content:flex-start;
+}
+div.social-media a {
+  margin: 20px;
+}
