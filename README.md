@@ -3,8 +3,14 @@
 # Protofolio : Mobile Version Skeleton
 
 > this repo is the mobile version skeleton of my protofolio.
+## Screenshots
+### Mobile
 
-![screenshot](./app_screenshot.png)
+![screenshot](./img/screenshots/scrshot1.png)
+
+
+![screenshot](./img/screenshots/scrshot2.png)
+
 
 Additional description about the project and its features.
 
