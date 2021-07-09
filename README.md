@@ -3,8 +3,15 @@
 # Protofolio : Mobile Version Skeleton
 
 > this repo is the mobile version skeleton of my protofolio.
+## Screenshots
+### Mobile
 
-![screenshot](./app_screenshot.png)
+![screenshot](./img/screenshots/scrshot1.png)
+
+
+![screenshot](./img/screenshots/scrshot2.png)
+
+![screenshot](./img/screenshots/scrshot3.png)
 
 Additional description about the project and its features.
 
@@ -19,7 +26,7 @@ Additional description about the project and its features.
 
 ## Authors
 
-👤 **Author1**
+👤 **Rachid Boudaoudi**
 
 - GitHub: [@benwmx](https://github.com/benwmx)
 - LinkedIn: [@rachid-boudaoudi](https://www.linkedin.com/in/rachid-boudaoudi-1621a0183/)

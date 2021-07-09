@@ -3,6 +3,9 @@
   --nav-color: #3c3a39;
   --primary-color: #ff6b00;
   --secondary-color: #fff5e1;
+  --font-crete: 'Crete Round', sans-serif;
+  --font-roboto: 'Roboto Condensed', sans-serif;
+  --font-inter: 'Inter', sans-serif;
 }
 
 body {
@@ -32,7 +35,7 @@ nav img {
 .logo {
   display: inline-block;
   color: var(--secondary-color);
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: var(--font-roboto);
   font-size: 24px;
   margin-left: 10px;
 }
@@ -51,26 +54,27 @@ section.headline {
   padding: 50px 20px;
 }
 
-.title {
-  font-family: 'Crete Round', sans-serif;
+.head {
+  font-family: var(--font-crete);
   font-size: 2rem;
   color: var(--primary-color);
   margin-top: 70px;
 }
 
-.title h2 {
+.head h2 {
   margin: 0;
 }
 
 section p.secondary {
   font-size: 24px;
   color: var(--secondary-color);
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: var(--roboto);
   margin: 0;
 }
 
 section p.details {
   color: white;
+  font-family: var(--font-inter);
 }
 
 section .social-media {
@@ -78,8 +82,198 @@ section .social-media {
   justify-content: flex-start;
 }
 
+.skills img {
+  display: inline;
+}
+
 section .social-media img {
   width: 20px;
   height: 20px;
   margin: 20px;
+}
+
+section.work {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin: 0;
+}
+
+section.work div.line1 {
+  height: 3px;
+  width: 90%;
+  border-radius: 70%;
+  background-color: black;
+  margin: auto;
+  -webkit-border-radius: 70%;
+  -moz-border-radius: 70%;
+  -ms-border-radius: 70%;
+  -o-border-radius: 70%;
+}
+
+.projects-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me h1 {
+  font-family: var(--font-crete);
+  font-size: 72px;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+section.work > h1 {
+  width: 90%;
+  margin: 120px auto 24px;
+  text-align: center;
+  font-family: var(--font-crete);
+  font-size: 32px;
+}
+
+.card > p {
+  margin-left: 30px;
+}
+
+section.work .title {
+  text-align: left;
+  padding: 0;
+  margin: 70px auto 19px 30px;
+  font-family: var(--font-crete);
+}
+
+.languages-built {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+.languages-built p {
+  background: rgba(255, 255, 255, 0.24);
+  justify-content: space-around;
+  margin-right: 5%;
+  padding: 15px;
+  color: white;
+}
+
+.button {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 17px;
+  font-family: var(--font-crete);
+}
+
+section.work .button {
+  width: 100%;
+}
+
+section.work .button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  width: 100%;
+}
+
+section.work .button:hover {
+  background-color: #fff5e1;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+section.work .button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+}
+
+section.work .card {
+  width: 90%;
+  height: auto;
+  margin: 40px auto 0;
+  background-image: url(./img/work.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  align-content: space-between;
+  align-items: baseline;
+  color: white;
+}
+
+section.about {
+  background-color: var(--theme-color);
+}
+
+.about-me {
+  background-image: url(./img/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 50px 20px 100px;
+  display: flex;
+  flex-flow: column;
+  align-content: baseline;
+  margin-top: 100px;
+}
+
+.line2 {
+  height: 1px;
+  width: 90%;
+  margin: auto;
+  background-color: var(--secondary-color);
+}
+
+.about-me p {
+  color: white;
+  font-family: var(--font-inter);
+}
+
+.about-me button {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.about-me button:hover {
+  background-color: #fff5e1;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.about-me button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+  transform: translateY(4px);
+}
+
+.abour-me button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  width: 100%;
+}
+
+.skills {
+  margin-top: 100px;
+  padding: 50px 20% 200px 20%;
+}
+
+.skills h2 {
+  font-family: var(--font-crete);
+  font-size: 32px;
+  color: white;
+}
+
+.skills li {
+  list-style-type: none;
+  color: white;
+  font-family: var(--font-inter);
+  font-size: 22px;
+  margin: 20px auto;
 }
