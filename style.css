@@ -174,9 +174,19 @@ section.work .button:hover {
   border: 1px solid var(--primary-color);
 }
 
+section.work .button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+}
+
 section.work .card {
   width: 90%;
-  height: 370px;
+  height: auto;
   margin: 40px auto 0;
   background-image: url(./img/work.png);
   background-repeat: no-repeat;
@@ -224,6 +234,18 @@ section.about {
   background-color: #fff5e1;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.about-me button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+  transform: translateY(4px);
+}
+
+.abour-me button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  width: 100%;
 }
 
 .skills {
