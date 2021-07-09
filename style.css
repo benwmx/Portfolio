@@ -100,11 +100,22 @@ section.work {
   margin: 0;
 }
 
-section.work div.line {
-  height: 1px;
+section.work div.line1 {
+  height: 3px;
   width: 90%;
+  border-radius: 70%;
   background-color: black;
   margin: auto;
+  -webkit-border-radius: 70%;
+  -moz-border-radius: 70%;
+  -ms-border-radius: 70%;
+  -o-border-radius: 70%;
+}
+
+.projects-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about-me h1 {
