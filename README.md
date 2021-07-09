@@ -11,6 +11,7 @@
 
 ![screenshot](./img/screenshots/scrshot2.png)
 
+![screenshot](./img/screenshots/scrshot3.png)
 
 Additional description about the project and its features.
 

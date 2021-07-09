@@ -82,6 +82,10 @@ section .social-media {
   justify-content: flex-start;
 }
 
+.skills img {
+  display: inline;
+}
+
 section .social-media img {
   width: 20px;
   height: 20px;
@@ -220,4 +224,23 @@ section.about {
   background-color: #fff5e1;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.skills {
+  margin-top: 100px;
+  padding: 50px 20% 200px 20%;
+}
+
+.skills h2 {
+  font-family: var(--font-crete);
+  font-size: 32px;
+  color: white;
+}
+
+.skills li {
+  list-style-type: none;
+  color: white;
+  font-family: var(--font-inter);
+  font-size: 22px;
+  margin: 20px auto;
 }
