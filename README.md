@@ -26,7 +26,7 @@ Additional description about the project and its features.
 
 ## Authors
 
-👤 **Author1**
+👤 **Rachid Boudaoudi**
 
 - GitHub: [@benwmx](https://github.com/benwmx)
 - LinkedIn: [@rachid-boudaoudi](https://www.linkedin.com/in/rachid-boudaoudi-1621a0183/)
