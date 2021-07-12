@@ -145,9 +145,11 @@ section.work .title {
 }
 
 .languages-built {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 30px;
+  width: 100%;
+}
+
+.languages-built p{
+  float: left;
 }
 
 .languages-built p {
