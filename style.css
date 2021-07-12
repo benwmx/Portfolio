@@ -148,16 +148,13 @@ section.work .title {
   width: 100%;
 }
 
-.languages-built p{
-  float: left;
-}
-
 .languages-built p {
   background: rgba(255, 255, 255, 0.24);
   justify-content: space-around;
   margin-right: 5%;
   padding: 15px;
   color: white;
+  float: left;
 }
 
 .button {
