@@ -20,11 +20,13 @@ header {
   top: 0;
   width: 100%;
   background-color: var(--nav-color);
+  height: 80px;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
+  height: 80px;
 }
 
 nav img {
@@ -41,7 +43,7 @@ nav img {
   margin-left: 10px;
 }
 
-section.headline {
+.headline {
   position: relative;
   top: 20px;
   display: flex;
@@ -72,14 +74,14 @@ footer h2 {
   margin: 0;
 }
 
-section p.secondary {
+p.secondary {
   font-size: 24px;
   color: var(--secondary-color);
   font-family: var(--roboto);
   margin: 0;
 }
 
-section p.details {
+p.details {
   color: white;
   font-family: var(--font-inter);
 }
@@ -99,7 +101,7 @@ section p.details {
   margin: 15px;
 }
 
-section.work {
+.work {
   display: grid;
   grid-template-rows: repeat(5, auto);
   grid-template-columns: 1fr;
@@ -107,7 +109,7 @@ section.work {
   margin: 0;
 }
 
-section.work div.line1 {
+.work div.line1 {
   height: 3px;
   width: 90%;
   border-radius: 70%;
@@ -132,13 +134,18 @@ section.work div.line1 {
   margin-bottom: 0;
 }
 
+.work h1 {
+  font-family: var(--font-crete);
+  text-align: center;
+}
+
 .skills h2 {
   font-family: var(--font-crete);
   font-size: 32px;
   color: white;
 }
 
-section.work > h2 {
+.work > h2 {
   width: 90%;
   margin: 120px auto 24px;
   text-align: center;
@@ -150,7 +157,7 @@ section.work > h2 {
   margin-left: 30px;
 }
 
-section.work .title {
+.work .title {
   text-align: left;
   padding: 0;
   margin: 70px auto 19px 30px;
@@ -182,23 +189,23 @@ section.work .title {
   font-family: var(--font-crete);
 }
 
-section.work .button {
+.work .button {
   width: 100%;
 }
 
-section.work .button:disabled {
+.work .button:disabled {
   background-color: #f4f1f0;
   color: var(--disabled-button-color);
   width: 100%;
 }
 
-section.work .button:hover {
+.work .button:hover {
   background-color: #fff5e1;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
-section.work .button:active {
+.work .button:active {
   background-color: #e05304;
   color: #f4f1f0;
   transform: translateY(-4px);
@@ -237,7 +244,7 @@ footer form button:disabled {
   color: var(--disabled-button-color);
 }
 
-section.work .card {
+.work .card {
   width: 90%;
   height: auto;
   margin: 40px auto 0;
@@ -251,7 +258,7 @@ section.work .card {
   color: white;
 }
 
-section.about {
+.about {
   background-color: var(--theme-color);
 }
 
