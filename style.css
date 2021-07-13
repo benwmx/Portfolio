@@ -169,16 +169,16 @@ p.details {
 
 .languages-built {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-left: 30px;
 }
 
 .languages-built p {
   background: rgba(255, 255, 255, 0.24);
-  justify-content: space-around;
-  margin-right: 5%;
-  padding: 15px;
+  font-size: 0.8rem;
   color: white;
+  margin-right: 8px;
+  padding: 10px;
 }
 
 .button {
@@ -256,8 +256,7 @@ footer form button:disabled {
   background-size: cover;
   display: flex;
   flex-flow: column;
-  align-content: space-between;
-  align-items: baseline;
+  justify-content: space-between;
   color: white;
 }
 
@@ -334,7 +333,7 @@ footer form button:disabled {
 footer {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 70px 25px 0;
 }
 
