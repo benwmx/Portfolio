@@ -62,6 +62,12 @@ section.headline {
   margin-top: 70px;
 }
 
+footer h2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: var(--font-inter);
+}
+
 .head h2 {
   margin: 0;
 }
@@ -126,7 +132,13 @@ section.work div.line1 {
   margin-bottom: 0;
 }
 
-section.work > h1 {
+.skills h2 {
+  font-family: var(--font-crete);
+  font-size: 32px;
+  color: white;
+}
+
+section.work > h2 {
   width: 90%;
   margin: 120px auto 24px;
   text-align: center;
@@ -196,6 +208,35 @@ section.work .button:active {
   -o-transform: translateY(-4px);
 }
 
+footer form button {
+  width: 40%;
+  height: 48px;
+  border: 0;
+  margin: 28px auto;
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.about-me button {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+footer form button:active {
+  transform: translateY(-4px);
+}
+
+footer form button:hover {
+  background-color: #fff5e1;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+footer form button:disabled {
+  background-color: #f4f1f0;
+  color: var(--disabled-button-color);
+}
+
 section.work .card {
   width: 90%;
   height: auto;
@@ -237,11 +278,6 @@ section.about {
   font-family: var(--font-inter);
 }
 
-.about-me button {
-  margin-top: 20px;
-  align-self: flex-start;
-}
-
 .about-me button:hover {
   background-color: #fff5e1;
   color: var(--primary-color);
@@ -265,12 +301,6 @@ section.about {
   padding: 50px 20% 200px 20%;
 }
 
-.skills h2 {
-  font-family: var(--font-crete);
-  font-size: 32px;
-  color: white;
-}
-
 .skills li {
   list-style-type: none;
   color: white;
@@ -289,4 +319,26 @@ section.about {
 .footer-links {
   display: flex;
   justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+footer form {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+footer form > * {
+  margin-top: 20px;
+}
+
+footer form input {
+  border: 0;
+  border-bottom: 1px solid #dfe1e6;
 }
