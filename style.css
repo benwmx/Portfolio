@@ -20,19 +20,19 @@ header {
   top: 0;
   width: 100%;
   background-color: var(--nav-color);
-  height: 80px;
+  height: auto;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: auto;
+  padding: 10px;
 }
 
 nav img {
   height: 24px;
-  margin: 15px 10px;
-  padding: 10px;
+  margin: auto 10px;
 }
 
 .logo {
@@ -40,12 +40,12 @@ nav img {
   color: var(--secondary-color);
   font-family: var(--font-roboto);
   font-size: 24px;
-  margin-left: 10px;
+  margin: 0 10px;
 }
 
 .headline {
   position: relative;
-  top: 20px;
+  top: 61px;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -332,7 +332,7 @@ footer {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  padding: 50px 20px;
+  padding: 70px 25px 0;
 }
 
 footer form {
@@ -342,7 +342,7 @@ footer form {
 }
 
 footer form > * {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 footer form input {
