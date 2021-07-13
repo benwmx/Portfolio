@@ -102,6 +102,8 @@ p.details {
 }
 
 .work {
+  position: relative;
+  top: 61px;
   display: grid;
   grid-template-rows: repeat(5, auto);
   grid-template-columns: 1fr;
@@ -143,6 +145,7 @@ p.details {
   font-family: var(--font-crete);
   font-size: 32px;
   color: white;
+  margin: 0;
 }
 
 .work > h2 {
@@ -305,7 +308,7 @@ footer form button:disabled {
 
 .skills {
   margin-top: 100px;
-  padding: 50px 20% 200px 20%;
+  padding: 50px 5% 200px 20%;
 }
 
 .skills li {
