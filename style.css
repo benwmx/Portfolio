@@ -397,3 +397,23 @@ footer form input {
   border: 0;
   border-bottom: 1px solid #dfe1e6;
 }
+
+@media screen and (min-width: 400px) {
+  .languages-built {
+    justify-content: flex-start;
+  }
+
+  .languages-built p {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .recent-work ul {
+    justify-content: flex-start;
+  }
+
+  .recent-work li {
+    margin-right: 20px;
+  }
+}
