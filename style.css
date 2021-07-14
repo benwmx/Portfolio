@@ -33,22 +33,14 @@ header nav {
 
 nav img {
   height: 24px;
-  margin: auto 10px;
 }
 
-nav ul {
-  list-style-type: none;
-  padding-left: 0;
+nav img.menu-icon {
+  margin-right: 10px;
 }
 
 nav ul li {
   display: none;
-}
-
-nav .desktop-nav-item {
-  display: none;
-  margin: 0;
-  padding: 0;
 }
 
 .logo {
@@ -434,15 +426,35 @@ footer form input {
 
 @media screen and (min-width: 1000px) {
   header nav {
-    justify-content: flex-end;
+    padding: 0 10%;
   }
-  
-  nav .desktop-nav-item {
+
+  nav ul li {
     display: inline;
+    margin-right: 80px;
+  }
+
+  nav ul a {
+    text-decoration: none;
+  }
+
+  nav ul p {
+    margin: 0;
+    font-family: var(--font-inter);
+    color: var(--secondary-color);
   }
 
   nav > img {
     display: none;
   }
 
+  nav ul img {
+    margin-top: 2px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
 }
