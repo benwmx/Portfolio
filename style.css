@@ -26,6 +26,7 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   height: auto;
   padding: 10px;
 }
@@ -33,6 +34,21 @@ header nav {
 nav img {
   height: 24px;
   margin: auto 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav ul li {
+  display: none;
+}
+
+nav .desktop-nav-item {
+  display: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -195,14 +211,6 @@ footer form button {
   color: white;
   margin: 0;
 }
-
-/* .work > h2 {
-  width: 90%;
-  margin: 120px auto 24px;
-  text-align: center;
-  font-family: var(--font-crete);
-  font-size: 32px;
-} */
 
 .card > p {
   margin-left: 30px;
@@ -416,4 +424,25 @@ footer form input {
   .recent-work li {
     margin-right: 20px;
   }
+}
+
+@media screen and (min-width: 700px) {
+  .headline {
+    background-size: 250px 150px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header nav {
+    justify-content: flex-end;
+  }
+  
+  nav .desktop-nav-item {
+    display: inline;
+  }
+
+  nav > img {
+    display: none;
+  }
+
 }

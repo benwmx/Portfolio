@@ -26,10 +26,32 @@
     <header>
         <nav class="navbar">
             <p class="nav-item logo">Rb</p>
-            <img class="nav-item" src="./img/menu.png" alt="the menu image ">
+            <ul>
+                <li>
+                    <a class="desktop-nav-item" href="#portfolio">
+                        <img src="./img/Portfolio.png" alt="portfolio picture">
+                    </a>
+                </li>
+                <li>
+                    <a class="desktop-nav-item" href="#about">
+                        <img src="./img/About.png" alt="about picture">
+                    </a>
+                </li>
+                <li>
+                    <a class="desktop-nav-item" href="#contact">
+                        <img src="./img/Contact.png" alt="contact picture">
+                    </a>
+                </li>
+                <li>
+                    <a class="desktop-nav-item" href="">
+                        <img src="./img/mail.png" alt="mail picture">
+                    </a>
+                </li>
+            </ul>
+            <img class="menu-icon" src="./img/menu.png" alt="the menu image ">
         </nav>
     </header>
-    <section class="headline">
+    <section id="portfolio" class="headline">
         <div class="head">
             <h2>Hey There.</h2>
             <h2>I'm Rachid</h2>
@@ -136,7 +158,7 @@
             </li>
         </ul>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="about-me">
             <h1> About Me</h1>
             <p>
@@ -180,7 +202,7 @@
             <input class="form-item" type="email" name="email" id="email" placeholder="Email address" required>
             <textarea class="form-item" name="message" id="message" cols="30" rows="10" maxlength="500"
                 placeholder="Enter text here" required></textarea>
-            <button class="form-item" type="submit">Get in touch</button>
+            <button id="contact" class="form-item" type="submit">Get in touch</button>
         </form>
         <div class="line3"></div>
         <div class="links footer-links">
