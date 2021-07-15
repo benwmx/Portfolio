@@ -340,6 +340,10 @@ footer form button:disabled {
   background-color: #e05304;
   color: #f4f1f0;
   transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  -moz-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  -o-transform: translateY(4px);
 }
 
 .abour-me button:disabled {
