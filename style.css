@@ -518,4 +518,10 @@ footer form input {
   .recent-work aside {
     margin-left: 5%;
   }
+
+  .about-me {
+    background-image: url(./img/illustration-about-me-desktop.png);
+    padding-right: 60%;
+    padding-left: 10%;
+  }
 }
