@@ -67,7 +67,7 @@ nav ul li {
 
 .head {
   font-family: var(--font-crete);
-  font-size: 2rem;
+  font-size: 32px;
   color: var(--primary-color);
   margin-top: 70px;
 }
@@ -132,7 +132,7 @@ p.details {
 
 .recent-work ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   padding-left: 0;
 }
@@ -436,7 +436,7 @@ footer form textarea {
 @media screen and (min-width: 700px) {
   .headline {
     background-size: 250px 150px;
-    padding: 100px 40px;
+    padding: 100px 40% 100px 40px;
   }
 }
 
@@ -454,6 +454,10 @@ footer form textarea {
     text-decoration: none;
   }
 
+  p {
+    font-size: 20px;
+  }
+
   nav ul p {
     margin: 0;
     font-family: var(--font-inter);
@@ -465,7 +469,7 @@ footer form textarea {
   }
 
   nav ul img {
-    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   nav ul {
@@ -490,6 +494,7 @@ footer form textarea {
     justify-content: center;
     margin-right: 50px;
     margin-left: 20px;
+    padding-top: 45px;
   }
 
   .work {
@@ -509,6 +514,7 @@ footer form textarea {
     grid-area: 1/1/2/2;
     padding-left: 0;
     padding-right: 0;
+    font-size: 40px;
   }
 
   .line1 {
@@ -555,5 +561,14 @@ footer form textarea {
     width: 30%;
     text-align: left;
     padding-top: 40px;
+  }
+
+  /* FONTS  */
+  .head {
+    font-size: 40px;
+  }
+
+  p.secondary {
+    font-size: 30px;
   }
 }
