@@ -53,7 +53,7 @@ nav ul li {
 
 .headline {
   position: relative;
-  top: 61px;
+  top: 60px;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -124,6 +124,7 @@ p.details {
 
 .recent-work {
   width: 90%;
+  height: auto;
   margin: 100px auto 0;
 }
 
@@ -141,7 +142,7 @@ p.details {
 
 .recent-work img {
   width: 100%;
-  height: auto;
+  margin: auto;
 }
 
 .recent-work h1 {
@@ -181,7 +182,7 @@ footer form button {
   grid-template-rows: repeat(5, auto);
   justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 0 0 200px;
 }
 
 .about-me h1 {
@@ -421,6 +422,7 @@ footer form input {
 @media screen and (min-width: 700px) {
   .headline {
     background-size: 250px 150px;
+    padding: 100px 40px;
   }
 }
 
@@ -456,5 +458,23 @@ footer form input {
     display: flex;
     justify-content: space-between;
     padding-left: 0;
+  }
+
+  .headline {
+    top: 62px;
+    padding: 200px 30% 200px 40px;
+    background-image: url(./img/background-desktop.png);
+    background-position: right center;
+    background-size: auto;
+    flex-flow: row-reverse;
+  }
+
+  .social-media {
+    width: 10%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 20px;
   }
 }

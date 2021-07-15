@@ -39,11 +39,11 @@
                 </li>
                 <li>
                     <a class="desktop-nav-item" href="#contact">
-                       <p>Contact</p>
+                        <p>Contact</p>
                     </a>
                 </li>
                 <li>
-                    <a class="desktop-nav-item" href="">
+                    <a class="desktop-nav-item" href="#msg">
                         <img src="./img/mail.png" alt="mail picture">
                     </a>
                 </li>
@@ -52,15 +52,17 @@
         </nav>
     </header>
     <section id="portfolio" class="headline">
-        <div class="head">
-            <h2>Hey There.</h2>
-            <h2>I'm Rachid</h2>
+        <div class="info">
+            <div class="head">
+                <h2>Hey There.</h2>
+                <h2>I'm Rachid</h2>
+            </div>
+            <p class="secondary">I'm a software developer</p>
+            <p class="details">I can help you build a product , feature or website Look through some of my work and
+                experience! If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+            </p>
         </div>
-        <p class="secondary">I'm a software developer</p>
-        <p class="details">I can help you build a product , feature or website Look through some of my work and
-            experience! If you like what you see and have a project you need coded,
-            don’t hestiate to contact me.
-        </p>
         <div class="social-media links">
             <a href="https://github.com/benwmx" rel="noopener noreferrer" target="_blank"><img
                     src="./img/002-github-big-logo.png" alt="the image ogf github icon"></a>
@@ -74,7 +76,7 @@
         <h1>My Recent Works</h1>
         <div class="line1"></div>
         <div class="recent-work">
-            <img src="./img/recent-work.png" alt="woman doi,g nice youga pose">
+            <img src="./img/recent-work-desktop.png" alt="woman doing nice youga pose">
             <h1>Multi-Post Stories</h1>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
@@ -156,6 +158,19 @@
                     See Project
                 </button>
             </li>
+            <li class="card six">
+                <h1 class="title">Professional Art <br>Printing Data</h1>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                    industry's standard</p>
+                <div class="languages-built">
+                    <p>Html</p>
+                    <p>Bootstrap</p>
+                    <p>Ruby</p>
+                </div>
+                <button type="button" class="button project">
+                    See Project
+                </button>
+            </li>
         </ul>
     </section>
     <section id="about" class="about">
@@ -197,16 +212,16 @@
     </section>
     <footer>
         <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form action="https://formspree.io/f/mjvjeypy" method="post">
+        <form id="msg" action="https://formspree.io/f/mjvjeypy" method="post">
             <input class="form-item" type="text" name="name" id="name" placeholder="Full name" maxlength="30" required>
             <input class="form-item" type="email" name="email" id="email" placeholder="Email address" required>
             <textarea class="form-item" name="message" id="message" cols="30" rows="10" maxlength="500"
                 placeholder="Enter text here" required></textarea>
-            <button id="contact" class="form-item" type="submit">Get in touch</button>
+            <button class="form-item" type="submit">Get in touch</button>
         </form>
         <div class="line3"></div>
         <div class="links footer-links">
-            <a href="https://github.com/benwmx" rel="noopener noreferrer" target="_blank">
+            <a id="contact" href="https://github.com/benwmx" rel="noopener noreferrer" target="_blank">
                 <img src="./img/002-github-big-logo-foot.png" alt="the image ogf github icon">
             </a>
             <a href="https://www.linkedin.com/in/rachid-boudaoudi-1621a0183/" rel="noopener noreferrer" target="_blank">
