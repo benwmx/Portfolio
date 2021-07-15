@@ -72,14 +72,14 @@ nav ul li {
   margin-top: 70px;
 }
 
-footer h2 {
+.head h2 {
+  margin: 0;
+}
+
+footer .form-container h2 {
   font-size: 24px;
   text-align: center;
   font-family: var(--font-inter);
-}
-
-.head h2 {
-  margin: 0;
 }
 
 p.secondary {
@@ -147,7 +147,14 @@ p.details {
   margin: auto;
 }
 
-.recent-work h2 {
+footer .skills h2 {
+  font-family: var(--font-crete);
+  font-size: 32px;
+  color: white;
+  margin: 0;
+}
+
+.work .recent-work h2 {
   font-family: var(--font-inter);
   text-align: left;
 }
@@ -198,13 +205,6 @@ footer form button {
   font-family: var(--font-crete);
   text-align: center;
   font-size: 36px;
-}
-
-.skills h2 {
-  font-family: var(--font-crete);
-  font-size: 32px;
-  color: white;
-  margin: 0;
 }
 
 .card > p {
@@ -388,6 +388,11 @@ footer {
   padding: 70px 25px 0;
 }
 
+footer .form-container {
+  display: flex;
+  flex-flow: column;
+}
+
 footer form {
   display: flex;
   flex-flow: column;
@@ -401,6 +406,11 @@ footer form > * {
 footer form input {
   border: 0;
   border-bottom: 1px solid #dfe1e6;
+}
+
+footer form textarea {
+  background-color: #fbf8f7;
+  border: 0;
 }
 
 @media screen and (min-width: 400px) {
@@ -530,5 +540,20 @@ footer form input {
   .skills > ul {
     flex-flow: row;
     justify-content: space-between;
+  }
+
+  footer .form-container {
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  footer form {
+    width: 60%;
+  }
+
+  footer .form-container h2 {
+    width: 30%;
+    text-align: left;
+    padding-top: 40px;
   }
 }
