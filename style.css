@@ -363,6 +363,8 @@ footer form button:disabled {
 }
 
 .skills ul {
+  display: flex;
+  flex-flow: column;
   padding-left: 0;
   margin-bottom: 10px;
 }
@@ -523,5 +525,10 @@ footer form input {
     background-image: url(./img/illustration-about-me-desktop.png);
     padding-right: 60%;
     padding-left: 10%;
+  }
+
+  .skills > ul {
+    flex-flow: row;
+    justify-content: space-between;
   }
 }
