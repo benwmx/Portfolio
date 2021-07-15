@@ -123,6 +123,8 @@ p.details {
 /* recent works section */
 
 .recent-work {
+  display: flex;
+  flex-flow: column;
   width: 90%;
   height: auto;
   margin: 100px auto 0;
@@ -145,7 +147,7 @@ p.details {
   margin: auto;
 }
 
-.recent-work h1 {
+.recent-work h2 {
   font-family: var(--font-inter);
   text-align: left;
 }
@@ -476,5 +478,44 @@ footer form input {
     justify-content: center;
     margin-right: 50px;
     margin-left: 20px;
+  }
+
+  .work {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .projects-list {
+    grid-area: 3/1/5/4;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .work > h1 {
+    grid-area: 1/1/2/2;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .line1 {
+    grid-area: 1/2/2/4;
+    width: 100%;
+  }
+
+  .recent-work {
+    grid-area: 2/1/3/4;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .recent-work img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .recent-work aside {
+    margin-left: 5%;
   }
 }
