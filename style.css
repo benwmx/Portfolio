@@ -49,6 +49,8 @@ nav ul li {
   font-family: var(--font-roboto);
   font-size: 24px;
   margin: 0 10px;
+  animation: rotate 1s alternate;
+  -webkit-animation: rotate 1s alternate;
 }
 
 .headline {
@@ -80,6 +82,11 @@ footer .form-container h2 {
   font-size: 24px;
   text-align: center;
   font-family: var(--font-inter);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
 }
 
 p.secondary {
@@ -301,6 +308,11 @@ footer form button:disabled {
   flex-flow: column;
   justify-content: space-between;
   color: white;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
 }
 
 .about {
@@ -415,6 +427,43 @@ footer form input {
 footer form textarea {
   background-color: #fbf8f7;
   border: 0;
+}
+
+/* Animations and Transitions */
+
+.work .card:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+footer .form-container h2:hover {
+  transform: translate(10px, 10px);
+  -webkit-transform: translate(10px, 10px);
+  -moz-transform: translate(10px, 10px);
+  -ms-transform: translate(10px, 10px);
+  -o-transform: translate(10px, 10px);
+}
+
+@keyframes rotate {
+  0% {
+    margin: 0 10px;
+  }
+
+  50% {
+    font-size: 30px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+
+  100% {
+    margin: 0 10px;
+  }
 }
 
 @media screen and (min-width: 400px) {
