@@ -171,8 +171,13 @@ footer form button {
   height: 48px;
   border: 0;
   margin: 28px auto;
-  background-color: #e05304;
+  background-color: var(--primary-color);
   color: #f4f1f0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .recent-work button {
@@ -249,6 +254,11 @@ footer form button {
   color: white;
   font-size: 17px;
   font-family: var(--font-crete);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
 .projects-list .button {
@@ -283,7 +293,13 @@ footer form button {
 }
 
 footer form button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
   transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
 }
 
 footer form button:hover {
@@ -430,6 +446,23 @@ footer form textarea {
 }
 
 /* Animations and Transitions */
+.desktop-nav-item p,
+.desktop-nav-item img {
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+
+.desktop-nav-item p:hover,
+.desktop-nav-item img:hover {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+}
 
 .work .card:hover {
   transform: scale(1.1);
