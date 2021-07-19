@@ -28,7 +28,7 @@ the template [Template 2](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Micr
 
 > This live demo is hosted by netlify
 
-[Rachid-Boudaoudi](https://rachid-boudaoudi.netlify.app/)
+[Rachid-Boudaoudi](https://benwmx.github.io/Protofolio-Mobile-version/)
 
 
 ## Authors
