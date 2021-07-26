@@ -61,6 +61,10 @@ nav img.menu-icon {
   display: none;
 }
 
+.mail{
+  display: none;
+}
+
 .menu-item a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -568,6 +572,10 @@ footer .form-container h2:hover {
 }
 
 @media screen and (min-width: 1000px) {
+  .mail{
+  display: inline-block;
+  }
+  
   header nav {
     padding: 0 10%;
   }
