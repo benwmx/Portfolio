@@ -41,19 +41,19 @@ nav img.menu-icon {
 
 .mobile-menu {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   font-size: 2rem;
   font-weight: bold;
   align-items: baseline;
+  padding: 0;
 }
 
 .menu-item {
   display: inline-block;
   width: 100%;
-  padding: 16px;
   border-bottom: 2px solid var(--disabled-button-color);
 }  
 
@@ -68,6 +68,13 @@ nav img.menu-icon {
 .menu-item a {
   text-decoration: none;
   color: var(--secondary-color);
+ 
+}
+
+.menu-item a p {
+   margin: 1rem auto;
+   padding: 0 1rem;
+   font-family: var(--font-inter);
 }
 
 nav ul li {
@@ -77,6 +84,7 @@ nav ul li {
 .mobile-menu .closing-btn {
   width: auto;
   border: none;
+  margin-right: 1rem;
   align-self: flex-end;
   color: var(--disabled-button-color);
 }
@@ -502,7 +510,6 @@ footer form textarea {
 .desktop-nav-item p:hover,
 .desktop-nav-item img:hover {
   transform: translateY(-4px);
-  background-color: #e05304;
   -webkit-transform: translateY(-4px);
   -moz-transform: translateY(-4px);
   -ms-transform: translateY(-4px);
