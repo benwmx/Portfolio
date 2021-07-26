@@ -39,8 +39,29 @@ nav img.menu-icon {
   margin-right: 10px;
 }
 
+.mobile-menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: baseline;
+}
+
 nav ul li {
   display: none;
+}
+
+.mobile-menu li {
+  padding: 16px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.mobile-menu .closing-btn {
+  border: none;
+  align-self: flex-end;
 }
 
 .logo {
