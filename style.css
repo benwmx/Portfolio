@@ -464,6 +464,7 @@ footer form textarea {
 .desktop-nav-item p:hover,
 .desktop-nav-item img:hover {
   transform: translateY(-4px);
+  background-color: #e05304;
   -webkit-transform: translateY(-4px);
   -moz-transform: translateY(-4px);
   -ms-transform: translateY(-4px);
