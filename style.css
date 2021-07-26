@@ -41,8 +41,7 @@ nav img.menu-icon {
 
 .mobile-menu {
   width: 100%;
-  min-height: 500px;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -51,14 +50,24 @@ nav img.menu-icon {
   align-items: baseline;
 }
 
-nav ul li {
-  display: none;
-}
-
-.mobile-menu li {
+.menu-item {
+  display: inline-block;
   width: 100%;
   padding: 16px;
   border-bottom: 2px solid var(--disabled-button-color);
+}  
+
+.visible {
+  display: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+nav ul li {
+  display: none;
 }
 
 .mobile-menu .closing-btn {
@@ -539,10 +548,6 @@ footer .form-container h2:hover {
   .languages-built p {
     margin-right: 20px;
   }
-
-  .mobile-menu {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 500px) {
@@ -553,10 +558,6 @@ footer .form-container h2:hover {
   .recent-work li {
     margin-right: 20px;
   }
-
-  .mobile-menu {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 700px) {
@@ -564,14 +565,15 @@ footer .form-container h2:hover {
     background-size: 250px 150px;
     padding: 100px 40% 100px 40px;
   }
-  .mobile-menu {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 1000px) {
   header nav {
     padding: 0 10%;
+  }
+
+  .closing-btn {
+    display: none;
   }
 
   .logo {
@@ -732,9 +734,5 @@ footer .form-container h2:hover {
 
   p.secondary {
     font-size: 30px;
-  }
-
-  .mobile-menu {
-    display: none;
   }
 }
