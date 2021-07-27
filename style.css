@@ -39,8 +39,79 @@ nav img.menu-icon {
   margin-right: 10px;
 }
 
+.mobile-menu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: baseline;
+  padding: 0;
+}
+
+.languages-built p {
+  background: rgba(255, 255, 255, 0.24);
+  font-size: 0.8rem;
+  color: white;
+  margin-right: 8px;
+  padding: 10px;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid var(--disabled-button-color);
+}
+
+.visible {
+  display: none;
+}
+
+.mail {
+  display: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.card > p {
+  margin-left: 30px;
+}
+
+.about-me p {
+  color: white;
+  font-family: var(--font-inter);
+}
+
+.desktop-nav-item p,
+.desktop-nav-item img {
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+
+.menu-item a p {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  font-family: var(--font-inter);
+}
+
 nav ul li {
   display: none;
+}
+
+.mobile-menu .closing-btn {
+  width: auto;
+  border: none;
+  margin-right: 1rem;
+  align-self: flex-end;
+  color: var(--disabled-button-color);
 }
 
 .logo {
@@ -219,10 +290,6 @@ footer form button {
   font-size: 36px;
 }
 
-.card > p {
-  margin-left: 30px;
-}
-
 .work .title {
   text-align: left;
   padding: 0;
@@ -235,14 +302,6 @@ footer form button {
   display: flex;
   justify-content: space-between;
   margin-left: 30px;
-}
-
-.languages-built p {
-  background: rgba(255, 255, 255, 0.24);
-  font-size: 0.8rem;
-  color: white;
-  margin-right: 8px;
-  padding: 10px;
 }
 
 .button {
@@ -359,11 +418,6 @@ footer form button:disabled {
   background-color: var(--secondary-color);
 }
 
-.about-me p {
-  color: white;
-  font-family: var(--font-inter);
-}
-
 .about-me button:hover {
   background-color: #fff5e1;
   color: var(--primary-color);
@@ -452,14 +506,6 @@ footer form textarea {
 }
 
 /* Animations and Transitions */
-.desktop-nav-item p,
-.desktop-nav-item img {
-  transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -ms-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-}
 
 .desktop-nav-item p:hover,
 .desktop-nav-item img:hover {
@@ -533,8 +579,16 @@ footer .form-container h2:hover {
 }
 
 @media screen and (min-width: 1000px) {
+  .mail {
+    display: inline-block;
+  }
+
   header nav {
     padding: 0 10%;
+  }
+
+  .closing-btn {
+    display: none;
   }
 
   .logo {
