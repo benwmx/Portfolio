@@ -1,4 +1,4 @@
-function openMenu() {
+const openMenu = () => {
   const menu = document.querySelector('nav>ul');
   const menuItem = Array.from(document.querySelectorAll('nav > ul li'));
   for (let item = 0; item < menuItem.length; item += 1) {
@@ -7,9 +7,9 @@ function openMenu() {
   menu.classList.add('mobile-menu');
   document.querySelector('nav > img').classList.toggle('visible');
   document.querySelector('nav > div').classList.toggle('visible');
-}
+};
 
-function closeMenu() {
+const closeMenu = () => {
   const menu = document.querySelector('nav>ul');
   const menuItem = Array.from(document.querySelectorAll('nav > ul li'));
   for (let item = 0; item < menuItem.length; item += 1) {
@@ -18,7 +18,7 @@ function closeMenu() {
   menu.classList.remove('mobile-menu');
   document.querySelector('nav > img').classList.toggle('visible');
   document.querySelector('nav > div').classList.toggle('visible');
-}
+};
 
 const menuBtn = document.querySelector('.menu-icon');
 menuBtn.addEventListener('click', openMenu);
