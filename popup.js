@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'My recent works',
     technologies: ['Html', 'Bootsrap', 'Ruby'],
-    image: 'img/Placeholder.png',
+    image: './img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standardA daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 2',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: 'img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 3',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: './img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 4',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: './img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -38,7 +38,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 5',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: './img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -47,7 +47,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 6',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: './img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -56,7 +56,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 7',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: './img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
