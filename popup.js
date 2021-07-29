@@ -1,8 +1,8 @@
 const projects = [
   {
-    title: 'My recent works 1',
+    title: 'My recent works',
     technologies: ['Html', 'Bootsrap', 'Ruby'],
-    image: 'img/Placeholder.png',
+    image: './img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 2',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: 'img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 3',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: 'img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 4',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: 'img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -38,7 +38,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 5',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: 'img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -47,7 +47,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 6',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: 'img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -56,7 +56,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 7',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/Placeholder.png',
+    image: 'img/recent-work-desktop.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -77,6 +77,7 @@ const btnOne = document.createElement('a');
 const btnTwo = document.createElement('a');
 const btnClose = document.createElement('button');
 const i = document.createElement('i');
+const overlay = document.createElement('div');
 btnOne.innerText = 'See Live';
 btnTwo.innerText = 'See Source';
 btnClose.appendChild(i);
@@ -109,11 +110,14 @@ technologies.className = 'popTec';
 btnOne.className = 'popBtn';
 btnTwo.className = 'popBtn';
 btnClose.className += ' popBtnClose';
+technologies.className = 'popTech';
+overlay.className = 'popOverlay';
 
 // open the popup function
 
 const popOpen = (index) => {
   document.body.appendChild(container);
+  document.body.appendChild(overlay);
   document.body.className = ' stopScroll';
   title.innerText = projects[index].title;
   for (let i = 0; i < projects[index].technologies.length; i += 1) {
@@ -145,5 +149,6 @@ const popClose = () => {
     }
   }
   document.body.removeChild(container);
+  document.body.removeChild(overlay);
 };
 popClose();
