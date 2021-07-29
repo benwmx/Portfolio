@@ -2,8 +2,8 @@ const projects = [
   {
     title: 'My recent works',
     technologies: ['Html', 'Bootsrap', 'Ruby'],
-    image: './img/recent-work-desktop.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
+    image: 'img/Placeholder.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standardA daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
     alt: 'alternative text',
@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 2',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/recent-work-desktop.png',
+    image: 'img/Placeholder.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 3',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/recent-work-desktop.png',
+    image: 'img/Placeholder.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 4',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/recent-work-desktop.png',
+    image: 'img/Placeholder.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -38,7 +38,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 5',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/recent-work-desktop.png',
+    image: 'img/Placeholder.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -47,7 +47,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 6',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/recent-work-desktop.png',
+    image: 'img/Placeholder.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -56,7 +56,7 @@ const projects = [
   {
     title: 'Profesional Art Printing Data 7',
     technologies: ['Html', 'Css', 'Bootsrap'],
-    image: 'img/recent-work-desktop.png',
+    image: 'img/Placeholder.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry s standard',
     liveLink: '#',
     sourceLink: '#',
@@ -73,17 +73,23 @@ const descBtn = document.createElement('div');
 const description = document.createElement('p');
 const image = document.createElement('img');
 const technologies = document.createElement('ul');
+const btn = document.createElement('div');
 const btnOne = document.createElement('a');
 const btnTwo = document.createElement('a');
 const btnClose = document.createElement('button');
 const i = document.createElement('i');
+const icon1 = document.createElement('i');
+const icon2 = document.createElement('i');
 const overlay = document.createElement('div');
 btnOne.innerText = 'See Live';
 btnTwo.innerText = 'See Source';
+btnOne.appendChild(icon1);
+btnTwo.appendChild(icon2);
+btn.appendChild(btnOne);
+btn.appendChild(btnTwo);
 btnClose.appendChild(i);
 descBtn.appendChild(description);
-descBtn.appendChild(btnOne);
-descBtn.appendChild(btnTwo);
+descBtn.appendChild(btn);
 infoDiv.appendChild(image);
 infoDiv.appendChild(descBtn);
 container.appendChild(title);
@@ -98,7 +104,8 @@ btnOne.setAttribute('onClick', 'popClose()');
 btnTwo.setAttribute('onClick', 'popClose()');
 
 // addi classes
-
+icon1.className = 'fas fa-external-link-alt';
+icon2.className = 'fab fa-github';
 i.className += 'fas';
 i.className += ' fa-times';
 container.className = 'popContainer';
@@ -106,9 +113,9 @@ title.className = 'popTitle';
 infoDiv.className = 'infoDiv';
 description.className = 'popDescr';
 image.className = 'popImage';
+descBtn.className = 'descBtn';
 technologies.className = 'popTec';
-btnOne.className = 'popBtn';
-btnTwo.className = 'popBtn';
+btn.className = 'popBtn';
 btnClose.className += ' popBtnClose';
 technologies.className = 'popTech';
 overlay.className = 'popOverlay';
