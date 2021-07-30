@@ -165,7 +165,24 @@ nav ul li {
   }
 }
 
-/* end of pop */
+.form-validation {
+  display: flex;
+  align-items: baseline;
+}
+
+.success {
+  color: green;
+}
+
+#error-msg {
+  margin-left: 2rem;
+  font-family: var(--font-inter);
+  font-size: 0.7rem;
+}
+
+.error {
+  color: red;
+}
 
 header {
   position: fixed;
