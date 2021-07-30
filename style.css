@@ -174,7 +174,7 @@ nav ul li {
   color: green;
 }
 
-#error-msg {
+form span {
   margin-left: 2rem;
   font-family: var(--font-inter);
   font-size: 0.7rem;
