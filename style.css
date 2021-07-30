@@ -390,7 +390,7 @@ footer form button {
   width: 40%;
   height: 48px;
   border: 0;
-  margin: 28px auto;
+  margin: 28px 0;
   background-color: var(--primary-color);
   color: #f4f1f0;
   transition: all 0.5s;
