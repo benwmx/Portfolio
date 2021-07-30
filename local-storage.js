@@ -16,7 +16,17 @@ const addData = () => {
   localStorage.setItem('userData', JSON.stringify(data));
 };
 
-document.getElementById('submit', () => {
-  addData();
-});
-retrieveData();
+const inputListeners = () => {
+  document.getElementById('name').addEventListener('keyup', () => {
+    addData();
+  });
+  document.getElementById('email').addEventListener('keyup', () => {
+    addData();
+  });
+  document.getElementById('message').addEventListener('keyup', () => {
+    addData();
+  });
+};
+
+if (localStorage.getItem('userData') !== null) retrieveData();
+inputListeners();
