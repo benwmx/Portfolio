@@ -49,7 +49,7 @@
                     </a>
                 </li>
                 <li class="mail">
-                    <a class="desktop-nav-item" href="#msg">
+                    <a class="desktop-nav-item" href="#form">
                         <img src="./img/mail.png" alt="mail picture">
                     </a>
                 </li>
@@ -250,12 +250,16 @@
         <div class="form-container">
             <h2>I'm always interested in hearing about new projects, so if
                 you'd like to chat please get in touch.</h2>
-            <form id="msg" action="https://formspree.io/f/mjvjeypy" method="post">
+            <form id="form" action="https://formspree.io/f/mjvjeypy" method="post">
                 <input type="text" name="name" id="name" placeholder="Full name" maxlength="30" required>
                 <input type="email" name="email" id="email" placeholder="Email address" required>
                 <textarea class="form-item" name="message" id="message" cols="30" rows="10" maxlength="500"
-                    placeholder="Enter text here" required></textarea>
-                <button type="submit">Get in touch</button>
+                    placeholder="Enter text here"></textarea>
+                <div class="form-validation">
+                    <button id='submit' type="submit">Get in touch</button>
+                    <span aria-live="polite"></span>
+                </div>
+
             </form>
         </div>
         <div class="line3"></div>
@@ -273,6 +277,7 @@
     </footer>
     <script src="./menu.js"></script>
     <script src="./popup.js"></script>
+    <script src="./formValidation.js"></script>
 </body>
 
 </html>

@@ -165,7 +165,24 @@ nav ul li {
   }
 }
 
-/* end of pop */
+.form-validation {
+  display: flex;
+  align-items: baseline;
+}
+
+.success {
+  color: green;
+}
+
+form span {
+  margin-left: 2rem;
+  font-family: var(--font-inter);
+  font-size: 0.7rem;
+}
+
+.error {
+  color: red;
+}
 
 header {
   position: fixed;
@@ -390,7 +407,7 @@ footer form button {
   width: 40%;
   height: 48px;
   border: 0;
-  margin: 28px auto;
+  margin: 28px 0;
   background-color: var(--primary-color);
   color: #f4f1f0;
   transition: all 0.5s;
