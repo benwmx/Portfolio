@@ -39,7 +39,7 @@ to use this repo locally do the following:
  ``
   Github pages
  ``
-[Rachid-Boudaoudi](https://benwmx.github.io/Protofolio-Mobile-version/)
+[Rachid-Boudaoudi](https://benwmx.github.io/Portfolio/)
 
 
 ## Authors
